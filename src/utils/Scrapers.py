@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup as Soup, Tag
 from html import unescape
-from models.Subject import Subject
-from models.Course import Course
+from src.models.Subject import Subject
+from src.models.Course import Course
 import re
 import requests
 import csv
@@ -36,7 +36,7 @@ def scrapeCourses():
 
     # get subject paths
     subjectpaths = []
-    with open('C:\\Users\\Aidan\\PycharmProjects\\madAtlasScraper\\data\\subjectpaths.csv', 'r') as f:
+    with open('/src/data/subjectpaths.csv', 'r') as f:
         reader = csv.reader(f)
         for row in reader:
             subjectpaths = row
