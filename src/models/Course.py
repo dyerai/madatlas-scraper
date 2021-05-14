@@ -11,5 +11,3 @@ class Course:
         self.repeatable = repeatable
         self.lastTaught = lastTaught
 
-    def __str__(self):
-        return f'{self.name}'
