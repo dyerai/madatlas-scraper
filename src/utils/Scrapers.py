@@ -1,3 +1,4 @@
+import json
 from bs4 import BeautifulSoup as Soup, Tag
 from html import unescape
 from src.models.Subject import Subject
@@ -31,12 +32,12 @@ def scrapeSubjects():
 
 
 def scrapeCourses():
-    subjects = scrapeSubjects()
-    courses = []
+    allSubjects = scrapeSubjects()
+    courses = {}
 
     # get subject paths
     subjectpaths = []
-    with open('/src/data/subjectpaths.csv', 'r') as f:
+    with open('\\\wsl$\\Ubuntu\\home\\dyerai\\madatlas-scraper\\src\\data\\subjectpaths.csv', 'r') as f:
         reader = csv.reader(f)
         for row in reader:
             subjectpaths = row
@@ -51,7 +52,7 @@ def scrapeCourses():
                 shortTitle = unescape(course.find("span", {"class": "courseblockcode"}).getText(strip=True))
                 longTitle = course.find("p", {"class": "courseblocktitle"}).getText().split("— ")[1]
                 credits = __parseCredits(course.find("p", {"class": "courseblockcredits"}).getText())
-                formattedShortTitle = __parseTitle(unescape(shortTitle))  # [0] = abbrev | [1] = course number
+                subjects, courseNumber = __parseTitle(unescape(shortTitle))  # [0] = abbrev | [1] = course number
                 description = course.find("p", {"class": "courseblockdesc"}).getText()
 
                 # get requisites, course designation, repeatable, and last taught
@@ -71,15 +72,17 @@ def scrapeCourses():
                     elif line[0] == "Last Taught":
                         lasttaught = line[1]
 
-                # map subjects to Subject objects
+                # map allSubjects to Subject objects
                 cSubj = []
-                for s in formattedShortTitle[0]:
-                    cSubj.append(subjects[s])
+                for s in subjects:
+                    cSubj.append(allSubjects[s].__dict__)
 
                 # TODO: construct Course objects
-                c = Course(cSubj, longTitle, formattedShortTitle[1], credits, description, requisites, designation,
+                c = Course(cSubj, longTitle, courseNumber, credits, description, requisites, designation,
                            repeatable, lasttaught)
-                courses.append({f'{formattedShortTitle[0]} {formattedShortTitle[1]}': c})
+                key = frozenset({subjects, courseNumber})
+                if not courses.get(key):
+                    courses[key] = c
 
 
 def __parseTitle(t):
@@ -88,10 +91,10 @@ def __parseTitle(t):
     code = m.group(2)
     if '/' in abbrev:
         abbrev = abbrev.split('/')
-        abbrev = [s.replace('\u200b', '').replace('\xa0', ' ').strip() for s in abbrev]
+        abbrev = frozenset([s.replace('\u200b', '').replace('\xa0', ' ').strip() for s in abbrev])
         return abbrev, code
 
-    return [unicodedata.normalize("NFKD", abbrev).strip()], code
+    return frozenset({unicodedata.normalize("NFKD", abbrev).strip()}), code
 
 
 def __parseCredits(c):
@@ -101,8 +104,8 @@ def __parseCredits(c):
             res.append(int(creditPattern.match(num).group()))
     else:
         res.append(int(creditPattern.match(c).group()))
-
     return res
+
 
 
 scrapeCourses()
