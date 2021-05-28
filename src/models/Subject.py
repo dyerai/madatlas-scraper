@@ -1,6 +1,8 @@
-class Subject:
+from dataclasses import dataclass
 
-    def __init__(self, name, abbrev, code):
-        self.name = name
-        self.abbrev = abbrev
-        self.code = code
+
+@dataclass
+class Subject:
+    name: str
+    abbrev: str
+    code: int
