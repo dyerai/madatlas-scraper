@@ -3,6 +3,7 @@ from dataclasses import dataclass
 
 @dataclass
 class Course:
+    abbrev: str
     subjects: list
     name: str
     number: int

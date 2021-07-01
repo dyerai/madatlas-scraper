@@ -78,7 +78,7 @@ def scrapeCourses():
                     cSubj.append(allSubjects[s].__dict__)
 
                 # TODO: construct Course objects
-                c = Course(cSubj, longTitle, courseNumber, credits, description, requisites, designation,
+                c = Course(shortTitle, cSubj, longTitle, courseNumber, credits, description, requisites, designation,
                            repeatable, lasttaught)
                 key = frozenset({subjects, courseNumber})
                 if not courses.get(key):
