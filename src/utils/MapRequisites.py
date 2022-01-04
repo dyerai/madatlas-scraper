@@ -9,7 +9,7 @@ Cases in requisite string:
     [ ] x and () or
     [ ] n or n, x
     [X] None
-    [ ] n (and/or) x
+    [X] n (and/or) x
     [X] Consent of instructor
     [X] n
     [ ] n. Not open for students with credit for n or n
@@ -21,7 +21,7 @@ Cases in requisite string:
     
     
     
-    regex subject string = (AFAERO|AFRICAN|AFROAMER|AAE|BSE|LSC|AGROECOL|AGRONOMY|AMERIND|ANATOMY|ANAT\&PHY|ANESTHES|ANTHRO|ABT|ART|ARTED|ARTHIST|ASIANAM|ASIAN|ASIALANG|ASTRON|MICROBIO|RP\&SE|BIOCHEM|BIOLOGY|BIOCORE|BME|BOTANY|BMI|CRB|CBE|CHEM|CHICLA|DERM|HDFS|GENBUS|ACCTIS|FINANCE|INFOSYS|INTLBUS|MHR|MARKETNG|OTM|REALEST|CIVENGR|RMI|ACTSCI|CLASSICS|CSCS|COMARTS|CS\&D|COMPLIT|COMPSCI|COUNPSY|CNSRSCI|CURRIC|DYSCI|EASIAN|ECON|EASTDS|ELPA|EDPOL|EDPSYCH|ECE|EMERMED|EMA|EP|EPD|ESL|ENGL|ENTOM|DS|ENVIRST|M\&ENVTOX|FAMMED|FISC|FOLKLORE|FOODSCI|F\&WECOL|FRENCH|GENETICS|GEOG|GLE|GEOSCI|GERMAN|GNS|GREEK|OBS\&GYN|HEBR\-BIB|HEBR\-MOD|HISTORY|MEDHIST|HISTSCI|HORT|HONCOL|ISYE|INTER\-AG|INTEGART|INTEREGR|INTER\-HE|ILS|INTER\-LS|INTEGSCI|INTLST|ITALIAN|JEWISH|JOURN|LANDARC|LCA|LCALANG|LATIN|LACIS|LAW|LEGALST|LIS|LINGUIS|LITTRANS|MATH|ANSCI|ME|MDGENET|MM\&I|MEDPHYS|MEDSC\-M|MEDSC\-V|MEDICINE|MEDIEVAL|MS\&E|ATMOCN|MILSCI|MOLBIOL|MUSIC|MUSPERF|NAVSCI|NEUROL|NEURSURG|NEURODPT|NTP|NE|CNP|NURSING|NUTRSCI|OCCTHER|ONCOLOGY|OPHTHALM|PATH\-BIO|PATH|PEDIAT|PHMSCI|PHMCOL\-M|PHARMACY|PHMPRAC|S\&APHM|PHILOS|DANCE|KINES|PHYTHER|PHYASST|PHYSICS|BMOLCHEM|PHYSIOL|PLPATH|POLISCI|PORTUG|POPHLTH|PSYCHIAT|PSYCH|PUBAFFR|PUBLHLTH|RADIOL|RHABMED|RELIGST|C\&ESOC|SCANDST|STS|SRMED|SLAVIC|SOCWORK|SOC|SOILSCI|SPANISH|STAT|COMPBIO|SURGERY|SURGSCI|THEATRE|URBRPL|GEN\&WS|ZOOLOGY)
+    regex subject string = ('A F AERO', 'AFRICAN', 'AFROAMER', 'A A E', 'BSE', 'LSC', 'AGROECOL', 'AGRONOMY', 'AMER IND', 'ANATOMY', 'ANAT\&PHY', 'ANESTHES', 'ANTHRO', 'ABT', 'ART', 'ART ED', 'ART HIST', 'ASIAN AM', 'ASIAN', 'ASIALANG', 'ASTRON', 'MICROBIO', 'RP \& SE', 'BIOCHEM', 'BIOLOGY', 'BIOCORE', 'B M E', 'BOTANY', 'B M I', 'CRB', 'CBE', 'CHEM', 'CHICLA', 'DERM', 'HDFS', 'GEN BUS', 'ACCT I S', 'FINANCE', 'INFO SYS', 'INTL BUS', 'M H R', 'MARKETNG', 'OTM', 'REAL EST', 'CIV ENGR', 'R M I', 'ACT SCI', 'CLASSICS', 'CSCS', 'COM ARTS', 'CS\&D', 'COMP LIT', 'COMP SCI', 'COUN PSY', 'CNSR SCI', 'CURRIC', 'DY SCI', 'E ASIAN', 'ECON', 'E A STDS', 'ELPA', 'ED POL', 'ED PSYCH', 'E C E', 'EMER MED', 'E M A', 'E P', 'E P D', 'ESL', 'ENGL', 'ENTOM', 'DS', 'ENVIR ST', 'M\&ENVTOX', 'FAM MED', 'FISC', 'FOLKLORE', 'FOOD SCI', 'F\&W ECOL', 'FRENCH', 'GENETICS', 'GEOG', 'G L E', 'GEOSCI', 'GERMAN', 'GNS', 'GREEK', 'OBS\&GYN', 'HEBR-BIB', 'HEBR-MOD', 'HISTORY', 'MED HIST', 'HIST SCI', 'HORT', 'H ONCOL', 'I SY E', 'INTER-AG', 'INTEGART', 'INTEREGR', 'INTER-HE', 'ILS', 'INTER-LS', 'INTEGSCI', 'INTL ST', 'ITALIAN', 'JEWISH', 'JOURN', 'LAND ARC', 'LCA', 'LCA LANG', 'LATIN', 'LACIS', 'LAW', 'LEGAL ST', 'L I S', 'LINGUIS', 'LITTRANS', 'MATH', 'AN SCI', 'M E', 'MD GENET', 'M M \& I', 'MED PHYS', 'MED SC-M', 'MED SC-V', 'MEDICINE', 'MEDIEVAL', 'M S \& E', 'ATM OCN', 'MIL SCI', 'MOL BIOL', 'MUSIC', 'MUS PERF', 'NAV SCI', 'NEUROL', 'NEURSURG', 'NEURODPT', 'NTP', 'N E', 'CNP', 'NURSING', 'NUTR SCI', 'OCC THER', 'ONCOLOGY', 'OPHTHALM', 'PATH-BIO', 'PATH', 'PEDIAT', 'PHM SCI', 'PHMCOL-M', 'PHARMACY', 'PHM PRAC', 'S\&A PHM', 'PHILOS', 'DANCE', 'KINES', 'PHY THER', 'PHY ASST', 'PHYSICS', 'BMOLCHEM', 'PHYSIOL', 'PL PATH', 'POLI SCI', 'PORTUG', 'POP HLTH', 'PSYCHIAT', 'PSYCH', 'PUB AFFR', 'PUBLHLTH', 'RADIOL', 'RHAB MED', 'RELIG ST', 'C\&E SOC', 'SCAND ST', 'STS', 'SR MED', 'SLAVIC', 'SOC WORK', 'SOC', 'SOIL SCI', 'SPANISH', 'STAT', 'COMP BIO', 'SURGERY', 'SURG SCI', 'THEATRE', 'URB R PL', 'GEN\&WS', 'ZOOLOGY')
     
     commonReqs = ['Freshman standing', 'Sophomore standing', 'Junior standing', 'Senior standing', 'Consent of instructor', 'Graduate/professional standing']
 """
@@ -29,32 +29,34 @@ Cases in requisite string:
 commonReqs = ['Freshman standing', 'Sophomore standing', 'Junior standing', 'Senior standing',
               'Graduate/professional standing', 'Consent of instructor']
 
-
-# TODO: this is missing spaces in a bunch of subjects, make this from subjects.json again
-subjectRegex = r'(AFAERO|AFRICAN|AFROAMER|AAE|BSE|LSC|AGROECOL|AGRONOMY|AMERIND|ANATOMY|ANAT\&PHY|ANESTHES|ANTHRO|ABT' \
-               r'|ART|ARTED|ARTHIST|ASIANAM|ASIAN|ASIALANG|ASTRON|MICROBIO|RP\&SE|BIOCHEM|BIOLOGY|BIOCORE|BME|BOTANY' \
-               r'|BMI|CRB|CBE|CHEM|CHICLA|DERM|HDFS|GENBUS|ACCTIS|FINANCE|INFOSYS|INTLBUS|MHR|MARKETNG|OTM|REALEST' \
-               r'|CIVENGR|RMI|ACTSCI|CLASSICS|CSCS|COMARTS|CS\&D|COMPLIT|COMPSCI|COUNPSY|CNSRSCI|CURRIC|DYSCI|EASIAN' \
-               r'|ECON|EASTDS|ELPA|EDPOL|EDPSYCH|ECE|EMERMED|EMA|EP|EPD|ESL|ENGL|ENTOM|DS|ENVIRST|M\&ENVTOX|FAMMED' \
-               r'|FISC|FOLKLORE|FOODSCI|F\&WECOL|FRENCH|GENETICS|GEOG|GLE|GEOSCI|GERMAN|GNS|GREEK|OBS\&GYN|HEBR\-BIB' \
-               r'|HEBR\-MOD|HISTORY|MEDHIST|HISTSCI|HORT|HONCOL|ISYE|INTER\-AG|INTEGART|INTEREGR|INTER\-HE|ILS|INTER' \
-               r'\-LS|INTEGSCI|INTLST|ITALIAN|JEWISH|JOURN|LANDARC|LCA|LCALANG|LATIN|LACIS|LAW|LEGALST|LIS|LINGUIS' \
-               r'|LITTRANS|MATH|ANSCI|ME|MDGENET|MM\&I|MEDPHYS|MEDSC\-M|MEDSC\-V|MEDICINE|MEDIEVAL|MS\&E|ATMOCN' \
-               r'|MILSCI|MOLBIOL|MUSIC|MUSPERF|NAVSCI|NEUROL|NEURSURG|NEURODPT|NTP|NE|CNP|NURSING|NUTRSCI|OCCTHER' \
-               r'|ONCOLOGY|OPHTHALM|PATH\-BIO|PATH|PEDIAT|PHMSCI|PHMCOL\-M|PHARMACY|PHMPRAC|S\&APHM|PHILOS|DANCE' \
-               r'|KINES|PHYTHER|PHYASST|PHYSICS|BMOLCHEM|PHYSIOL|PLPATH|POLISCI|PORTUG|POPHLTH|PSYCHIAT|PSYCH|PUBAFFR' \
-               r'|PUBLHLTH|RADIOL|RHABMED|RELIGST|C\&ESOC|SCANDST|STS|SRMED|SLAVIC|SOCWORK|SOC|SOILSCI|SPANISH|STAT' \
-               r'|COMPBIO|SURGERY|SURGSCI|THEATRE|URBRPL|GEN\&WS|ZOOLOGY)\s(\d+)'
+subjectRegex = r'(A F AERO|AFRICAN|AFROAMER|A A E|BSE|LSC|AGROECOL|AGRONOMY|AMER ' \
+               r'IND|ANATOMY|ANAT\&PHY|ANESTHES|ANTHRO|ABT|ART|ART ED|ART HIST|ASIAN ' \
+               r'AM|ASIAN|ASIALANG|ASTRON|MICROBIO|RP \& SE|BIOCHEM|BIOLOGY|BIOCORE|B M E|BOTANY|B M ' \
+               r'I|CRB|CBE|CHEM|CHICLA|DERM|HDFS|GEN BUS|ACCT I S|FINANCE|INFO SYS|INTL BUS|M H R|MARKETNG|OTM|REAL ' \
+               r'EST|CIV ENGR|R M I|ACT SCI|CLASSICS|CSCS|COM ARTS|CS\&D|COMP LIT|COMP SCI|COUN PSY|CNSR ' \
+               r'SCI|CURRIC|DY SCI|E ASIAN|ECON|E A STDS|ELPA|ED POL|ED PSYCH|E C E|EMER MED|E M A|E P|E P ' \
+               r'D|ESL|ENGL|ENTOM|DS|ENVIR ST|M\&ENVTOX|FAM MED|FISC|FOLKLORE|FOOD SCI|F\&W ' \
+               r'ECOL|FRENCH|GENETICS|GEOG|G L E|GEOSCI|GERMAN|GNS|GREEK|OBS\&GYN|HEBR-BIB|HEBR-MOD|HISTORY|MED ' \
+               r'HIST|HIST SCI|HORT|H ONCOL|I SY E|INTER-AG|INTEGART|INTEREGR|INTER-HE|ILS|INTER-LS|INTEGSCI|INTL ' \
+               r'ST|ITALIAN|JEWISH|JOURN|LAND ARC|LCA|LCA LANG|LATIN|LACIS|LAW|LEGAL ST|L I ' \
+               r'S|LINGUIS|LITTRANS|MATH|AN SCI|M E|MD GENET|M M \& I|MED PHYS|MED SC-M|MED SC-V|MEDICINE|MEDIEVAL|M ' \
+               r'S \& E|ATM OCN|MIL SCI|MOL BIOL|MUSIC|MUS PERF|NAV SCI|NEUROL|NEURSURG|NEURODPT|NTP|N ' \
+               r'E|CNP|NURSING|NUTR SCI|OCC THER|ONCOLOGY|OPHTHALM|PATH-BIO|PATH|PEDIAT|PHM SCI|PHMCOL-M|PHARMACY|PHM ' \
+               r'PRAC|S\&A PHM|PHILOS|DANCE|KINES|PHY THER|PHY ASST|PHYSICS|BMOLCHEM|PHYSIOL|PL PATH|POLI ' \
+               r'SCI|PORTUG|POP HLTH|PSYCHIAT|PSYCH|PUB AFFR|PUBLHLTH|RADIOL|RHAB MED|RELIG ST|C\&E SOC|SCAND ' \
+               r'ST|STS|SR MED|SLAVIC|SOC WORK|SOC|SOIL SCI|SPANISH|STAT|COMP BIO|SURGERY|SURG SCI|THEATRE|URB R ' \
+               r'PL|GEN\&WS|ZOOLOGY)'
 
 courseRegex = subjectRegex + r'\s\d+'
 
 courseCombinations = []
-
+logical_combinations = []
 
 def mapRequisites(courses):
     # filter courses without requisites
     courses = list(filter(lambda c: c['requisite'] is not None, courses))
 
+    combinationID = 0
     for course in courses:
         requisite = course['requisite']
 
@@ -73,17 +75,36 @@ def mapRequisites(courses):
             course.requiresInstructorConsent = True
 
         # check if requisite is a single course
-        combinationId = 0
-        if re.fullmatch(f'^({courseRegex})$', requisite):
-            courseCombinations.append({combinationId: (course.abbrev, requisite)})  # this is likely a better way to do this
-            # courseCombinations.append((combinationId, course.abbrev, [requisite]))
-            combinationId += 1
-        # check for two course
-        # elif re.fullmatch(fr'^((?P<course1>{courseRegex})\w(?P<combinator>and|or)\w(?P<course2>{courseRegex}))$'):
-        #     courseCombinations.append((combinationId, course.abbrev, [requisite,]))
+        # {combinationId: (requisite, sub_combination)}
+        case = __checkCase(requisite)
+        if case['singleCourse']:
+            courseCombinations.append({combinationID: (requisite, None)})  # this is likely a better way to do this
+            course.prerequisiteId = combinationID
+            combinationID += 1
+        # check for two courses with same subject
+        elif case['doubleCourse']:
+            pass
+        # check for two courses with different subjects
+        elif case['doubleCourse_diff_subj']:
+            course1 = case['doubleCourse_diff_subj'].group('course1')
+            combinator = case['doubleCourse_diff_subj'].group('combinator')
+            course2 = case['doubleCourse_diff_subj'].group('course2')
+            courseCombinations.append({combinationID: (course1, None)})
+            courseCombinations.append({combinationID: (course2, None)})
+            logical_combinations.append((combinationID, combinator.upper()))
+            combinationID += 1
 
     return courseCombinations
 
 
-def __parseRequisite():
-    pass
+def __checkCase(s):
+    singleCourse = re.fullmatch(f'^({courseRegex})$', s)
+    doubleCourse = re.fullmatch(fr'(^{subjectRegex}\s(?P<course1>\d+)\s(?P<combinator>and|or)\w(?P<course2>\d+)$|'
+                                + fr'^{subjectRegex}\s(?P<course1num>\d+),\s(?P<course2num>\d+)$)')
+    doubleCourse_diff_subj = re.fullmatch(fr'^(?P<course1>{courseRegex})\w(?P<combinator>and|or)\w(?P<course2>{courseRegex})$', s)
+
+    return {
+        'singleCourse': singleCourse,
+        'doubleCourse': doubleCourse,
+        'doubleCourse_diff_subj': doubleCourse_diff_subj,
+    }
